@@ -1,0 +1,26 @@
+{
+  "grammar": "t3_finance_chart",
+  "duration": 5,
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "theme": {"name": "paper", "accent": "#b3472b", "accent2": "#336d58"},
+  "data": {
+    "title": "季度销量增长了 75%",
+    "unit": "销量（千件）",
+    "source": "演示用合成数据",
+    "chart": "bar",
+    "series": [
+      {"label": "Q1", "value": 12}, {"label": "Q2", "value": 14},
+      {"label": "Q3", "value": 17}, {"label": "Q4", "value": 21}
+    ],
+    "highlight": {"index": 3, "text": "+75%", "sub": "Q4 对比 Q1"}
+  },
+  "cues": [
+    {"at": 0, "kind": "bar", "data": {"index": 0}},
+    {"at": 0.8, "kind": "bar", "data": {"index": 1}},
+    {"at": 1.6, "kind": "bar", "data": {"index": 2}},
+    {"at": 2.4, "kind": "bar", "data": {"index": 3}},
+    {"at": 3.4, "kind": "highlight"}
+  ]
+}
