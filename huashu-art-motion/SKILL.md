@@ -3,7 +3,7 @@ name: huashu-art-motion
 description: 在 HiAgent 用代码制作产品演示、口播解说、动态图表和文件分析动画。使用 DB-GPT 分析 Excel、CSV，读取 PDF 与 Word 的内容和出处，并将主题、讲稿、文件证据、图片或录音转成可离线播放和导出视频的动画 HTML。
 metadata:
   author: 花叔
-  version: "1.3.1-hiagent.5"
+  version: "1.3.1-hiagent.6"
   upstream: "https://github.com/alchaincyf/huashu-art-motion"
   upstream-revision: "a97c45018d46e950d56d61981138e08f4e092909"
 ---

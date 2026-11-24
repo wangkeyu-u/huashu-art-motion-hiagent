@@ -26,6 +26,10 @@ window.U = {
   poly(pts, closed = true) { const p = new Path2D(); pts.forEach((q, i) => i ? p.lineTo(q[0], q[1]) : p.moveTo(q[0], q[1])); if (closed) p.closePath(); return p; },
 };
 
+// HiAgent-generated scene snippets often call lerp(...) as a plain helper.
+// Keep that spelling available alongside the documented U.lerp API.
+window.lerp = U.lerp;
+
 // ---------- 画布尺寸 ----------
 // 默认 1920×1080。竖屏片段（clip.html，spec.width/height）和竖屏整片（index.html?w=1080&h=1920，或 eras.js 里写 window.FILM_SIZE = [1080, 1920]）
 // 启动时调一次 U.setStage(w, h)。用到屏幕尺寸的库（PAINT / BRUSH / RENDER / POST / KIT / TOON / CAM / UI / CH / DG / CL / MD、transitions.js、engine.js）

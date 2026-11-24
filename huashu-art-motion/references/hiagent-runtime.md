@@ -52,6 +52,7 @@ window.SCENES.opening = {
 ```
 
 - `localTime` 是镜内时间，上一镜在转场中会继续得到新的时间。用有种子的 `U.rng`，同一时刻应得到同一画面。
+- 插值请写 `U.lerp(a, b, progress)`。运行时也提供全局 `lerp(a, b, progress)`，兼容 HiAgent 生成的旧场景代码。
 - `images` 是项目级素材表，只有实际保存到本地的图片会被内嵌。需要布局框、图文、曲线或材质时，可复用 `scripts/engine/lib/` 中已有函数。
 - 如果场景代码运行时才拼出字体名，在项目的 `"fonts"` 数组明确列出这些字体名。随包字体名见 `scripts/engine/lib/fonts.js`。
 
